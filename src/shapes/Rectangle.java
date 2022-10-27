@@ -9,15 +9,17 @@ public class Rectangle {
 	
 	//methods
 	public Rectangle() {
-		
+		this.length=1;
+		this.width=1;
 	}
 	
 	public Rectangle(double side) {
-		
+		this.length=side;
+		this.width=side;
 	}
 	
 	public Rectangle(double length, double width) {
-		
+
 	}
 	
 	private double findPerimeter() {
@@ -29,7 +31,8 @@ public class Rectangle {
 	}
 	
 	public void printStats() {
-		
+		System.out.println("rectangle");
+		System.out.println("Width = "+this.width*2);
 	}
 
 	public double getLength() {
