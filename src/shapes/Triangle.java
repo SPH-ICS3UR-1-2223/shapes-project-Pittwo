@@ -9,7 +9,8 @@ public class Triangle {
 	
 	//Methods
 	public Triangle() {
-		
+		this.sideA=1;
+		this.sideB=1;
 	}
 	
 	public Triangle(double a, double b, double c) {

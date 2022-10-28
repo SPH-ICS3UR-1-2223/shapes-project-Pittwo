@@ -8,11 +8,11 @@ public class Main {
 		int userChoice;
 		//choose create, be given a shape, quit
 		do {
-			System.out.println("what doing");
-			System.out.println("1: I want to create a shape");
-			System.out.println("2: I want to view a shape");
-			System.out.println("3: I want to change a shape");
-			System.out.println("4: I want to end the program");
+			System.out.println("Choose an option");
+			System.out.println("1: Create shape");
+			System.out.println("2: View shape");
+			System.out.println("3: Change shape");
+			System.out.println("4: End program");
 			userChoice=in.nextInt();
 			
 			if (userChoice == 1) {
@@ -22,10 +22,21 @@ public class Main {
 				System.out.println("2: Rectangle");
 				System.out.println("3: Triangle");
 				int secondChoice=in.nextInt();
+				//read in input for radius
 				if (secondChoice == 1) {
+					System.out.println("Input the radius of the circle: ");
+					Circle C = new Circle();
+					C.setRadius(in.nextInt());
+					C.printStats();
+					
+					//end secondChoice=1 once printStats has been printed
+					System.exit(0);
+				}
+				if (secondChoice == 2){
 					
 				}
 				
+				//exit userChoice=1
 				System.exit(0);
 			}
 			if (userChoice ==2) {
