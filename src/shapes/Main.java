@@ -22,6 +22,7 @@ public class Main {
 				System.out.println("2: Rectangle");
 				System.out.println("3: Triangle");
 				int secondChoice=in.nextInt();
+				//circle
 				//read in input for radius
 				if (secondChoice == 1) {
 					System.out.println("Input the radius of the circle: ");
@@ -32,8 +33,38 @@ public class Main {
 					//end secondChoice=1 once printStats has been printed
 					System.exit(0);
 				}
-				if (secondChoice == 2){
+				//rectangle
+				if (secondChoice == 2) {
+					//read in length
+					System.out.println("Input desired length");
+					Rectangle R = new Rectangle();
+					R.setLength(in.nextInt());
+					//read in width
+					System.out.println("input desired width");
+					R.setWidth(in.nextInt());
+					//printStats
+					R.printStats();
 					
+					//end secondChoice=2 once printStats has been printed
+					System.exit(0);
+				}
+				//triangle
+				if (secondChoice == 3) {
+					//read in side A
+					System.out.println("Input desired height");
+					Triangle T = new Triangle();
+					T.setSideA(in.nextInt());
+					//read in side B
+					System.out.println("Input desired base");
+					T.setSideB(in.nextInt());
+					//read in side C
+					System.out.println("Input desired hypotenuse");
+					T.setSideC(in.nextInt());
+					//printStats
+					T.printStats();
+					
+					//end secondChoice=3 once printStats has been printed
+					System.exit(0);
 				}
 				
 				//exit userChoice=1
@@ -46,8 +77,20 @@ public class Main {
 				System.out.println("2: Rectangle");
 				System.out.println("3: Triangle");
 				int secondChoice=in.nextInt();
+				//circle
 				if (secondChoice == 1) {
-					
+					Circle C = new Circle();
+					C.printStats();
+				}
+				//rectangle
+				if (secondChoice == 2) {
+					Rectangle R = new Rectangle();
+					R.printStats();
+				}
+				//triangle
+				if (secondChoice == 3) {
+					Triangle T = new Triangle();
+					T.printStats();
 				}
 				System.exit(0);
 			}
@@ -58,6 +101,7 @@ public class Main {
 				System.out.println("2: Rectangle");
 				System.out.println("3: Triangle");
 				int secondChoice=in.nextInt();
+				//circle
 				if (secondChoice == 1) {
 					
 				}
