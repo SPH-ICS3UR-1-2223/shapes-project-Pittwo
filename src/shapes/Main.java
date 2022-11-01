@@ -103,7 +103,64 @@ public class Main {
 				int secondChoice=in.nextInt();
 				//circle
 				if (secondChoice == 1) {
+					//change radius
+					System.out.println("What will the new radius be: ");
+					Circle C = new Circle();
+					C.setRadius(in.nextInt());
+					C.printStats();
+				}
+				//rectangle
+				if (secondChoice == 2) {
+					//change what
+					System.out.println("what will be changed:");
+					System.out.println("1: length");
+					System.out.println("2: width");
+					int changeSide=in.nextInt();
+					//if change length
+					if (changeSide == 1) {
+						System.out.println("What is the new length: ");
+						Rectangle R = new Rectangle();
+						R.setLength(in.nextInt());
+						R.printStats();
+					}
+					//if change width
+					if (changeSide == 2) {
+						System.out.println("What is the new width: ");
+						Rectangle R = new Rectangle();
+						R.setWidth(in.nextInt());
+						R.printStats();
+					}
 					
+				}
+				//triangle
+				if (secondChoice == 3) {
+					//change side
+					System.out.println("what will be changed:");
+					System.out.println("1: hight");
+					System.out.println("2: base");
+					System.out.println("3: hypotenuse");
+					int changeSide=in.nextInt();
+					//change side A
+					if (changeSide == 1) {
+						System.out.println("What is the new hight: ");
+						Triangle T = new Triangle();
+						T.setSideA(in.nextInt());
+						T.printStats();
+					}
+					//change side B
+					if (changeSide == 2) {
+						System.out.println("What is the new base: ");
+						Triangle T = new Triangle();
+						T.setSideB(in.nextInt());
+						T.printStats();
+					}
+					//change side C
+					if (changeSide == 3) {
+						System.out.println("What is the new hypotenuse: ");
+						Triangle T = new Triangle();
+						T.setSideC(in.nextInt());
+						T.printStats();
+					}
 				}
 				
 				System.exit(0);
